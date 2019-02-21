@@ -8,6 +8,7 @@
   --page-2-color: #e2d0be;
   --page-3-color: #eee5bf;
   --page-4-color: #e8f8c1;
+  --animation-speed: 1s;
 }
 
 /* Base Elements */
@@ -47,6 +48,12 @@ body {
   border-radius: 5px;
   display: inline-block;
   margin: 2rem 0;
+  transition: all 0.5s ease-in;
+}
+
+.btn:hover {
+  background: var(--color-light);
+  color: var(--color-dark);
 }
 
 .page p {
@@ -66,4 +73,27 @@ body {
 }
 #page-4 {
   background: var(--page-4-color);
+}
+
+/* Animations */
+#page-1 h1 {
+  animation: heading var(--animation-speed) forwards ease;
+  transform: translateY(-1200px);
+}
+
+#page-1 p {
+  animation: text var(--animation-speed) forwards ease 1s;
+  transform: translateX(-2000px);
+}
+
+/* Keyframes */
+@keyframes heading {
+  to {
+    transform: translate(0);
+  }
+}
+@keyframes text {
+  to {
+    transform: translate(0);
+  }
 }
