@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Marck+Script|Montserrat");
+
+.body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.l-heading {
+  font-family: "Marck Script", cursive;
+}
